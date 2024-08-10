@@ -3,6 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
+  {
+    path : 'flow',
+    component : LayoutComponent,
+    loadChildren: () => import('../flows/flows.module').then((m) => m.FlowsModule),
+  },
+  {
+    path : 'market',
+    component : LayoutComponent,
+    loadChildren: () => import('../market/market.module').then((m) => m.MarketModule),
+  },
 
   // {
   //   path : 'order',
@@ -14,11 +24,7 @@ const routes: Routes = [
   //   component: LayoutComponent,
   //   loadChildren: () => import('../cashier/cashier.module').then((m) => m.CashierModule),
   // },
-  {
-    path : 'config',
-    component : LayoutComponent,
-    // loadChildren : () => import('../config/config.module').then((m) => m.ConfigModule),
-  },
+
 
   { path: '', redirectTo: 'flow', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },
