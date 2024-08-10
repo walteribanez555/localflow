@@ -7,7 +7,8 @@ app.whenReady().then(() => {
   mainWindow = window.createBrowserWindow(app);
 
   // Option 1: Uses Webtag and load a custom html file with external content
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("./locallyflow/index.html");
+
   //mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // Option 2: Load directly an URL if you don't need interface customization
