@@ -7,3 +7,8 @@
 - **Maria Lourdes Vaca Pessoa**
 - **Ana Carolina Cladera**
 - **Walter Ronny Ibañez Saucedo**
+## Stack:
+- **Electron**
+- **Angular**
+- **Tailwind**
+- **Swiper**
