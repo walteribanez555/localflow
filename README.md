@@ -1,15 +1,18 @@
 # localflow
-# Portable Chatbot - ETH Buildaton Ethereum
+## Portable Chatbot - ETH Buildaton Ethereum
 
-## Participants:
+### Participants:
 - **Diego Jhoan Guzmán Montoya**
 - **Cristian David Ramirez Callejas**
 - **Maria Lourdes Vaca Pessoa**
 - **Ana Carolina Cladera**
 - **Walter Ronny Ibañez Saucedo**
 
-## Stack:
+### Stack:
 - **Electron**
 - **Angular**
 - **Tailwind**
 - **Swiper**
+
+### Architecture
+![Architecture](assets/architecture.png)
