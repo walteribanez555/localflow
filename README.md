@@ -19,3 +19,6 @@
 
 ### Architecture (LANDING PAGE)
 ![Architecture](assets/architecture.png)
+
+### Architecture (Service bots)
+![services](assets/it_backend.png)

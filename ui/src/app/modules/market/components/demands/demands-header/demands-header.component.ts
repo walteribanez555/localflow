@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
+  selector: 'app-demands-header',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl : './list.component.html',
+  templateUrl : './demands-header.component.html',
 
 })
-export class ListComponent { }
+export class DemandsHeaderComponent { }

@@ -1,0 +1,26 @@
+<div class="flex flex-col gap-2">
+  <h1>Ethereum Service Interface</h1>
+
+  <div class="form-group">
+    <label for="nombre">Nombre del Ítem:</label>
+    <input type="text" id="nombre" [(ngModel)]="nombre" placeholder="Nombre del ítem">
+  </div>
+
+  <div class="form-group">
+    <label for="precio">Precio del Ítem (WEI)</label>
+    <input type="number" id="precio" [(ngModel)]="precio" placeholder="Precio del ítem">
+  </div>
+
+
+  <div class="flex flex-row items-center justify-between w-full">
+    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="listarItem()">Listar Ítem</button>
+    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="comprarItem()">Comprar Ítem</button>
+    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="obtenerItem()">Obtener Ítem</button>
+
+  </div>
+
+  <div *ngIf="item">
+    <h2>Ítem Obtenido:</h2>
+    <pre>{{ item | json }}</pre>
+  </div>
+</div>

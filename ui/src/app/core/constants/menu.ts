@@ -29,10 +29,16 @@ export class Menu {
       separator : false,
       items : [
         {
-          icon : 'assets/icons/heroicons/outline/shopping-cart.svg',
-          label : 'Market',
-          route : '/market/list'
-        }
+          icon : 'assets/icons/heroicons/outline/currency-dolar.svg',
+          label : 'Oferta',
+          route : '/market/offers'
+        },
+        {
+          icon : 'assets/icons/heroicons/outline/cash-register.svg',
+          label : 'Demanda',
+          route : '/market/demands'
+        },
+
       ]
     }
 

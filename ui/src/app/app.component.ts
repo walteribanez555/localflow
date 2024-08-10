@@ -10,5 +10,5 @@ import { ResponsiveHelperComponent } from './shared/components/responsive-helper
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'localyflow';
+  title = 'localflow';
 }
