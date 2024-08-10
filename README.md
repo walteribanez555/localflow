@@ -1,8 +1,6 @@
 # localflow
 ## Portable Chatbot - ETH Buildaton Ethereum
 
-
-### Logo: 
  ![Logo](assets/localflow_icon.jpeg)
 
 
