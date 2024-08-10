@@ -1,7 +1,7 @@
 # locallyflow
 # Portable Chatbot - ETH Buildaton Ethereum
 
-## Participantes:
+## Participants:
 - **Diego Jhoan Guzmán Montoya**
 - **Cristian David Ramirez Callejas**
 - **Maria Lourdes Vaca Pessoa**
