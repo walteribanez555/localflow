@@ -1,4 +1,4 @@
-# locallyflow
+# localflow
 # Portable Chatbot - ETH Buildaton Ethereum
 
 ## Participants:
