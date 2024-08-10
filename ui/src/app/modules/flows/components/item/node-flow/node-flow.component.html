@@ -1,0 +1,104 @@
+<div
+  class="flex  w-screen  md:w-96 bg-background h-full overflow-auto gap-2  px-3 flex-col scrollbar-thumb-rounded scrollbar-track-rounded grow  scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted">
+  <div class="sticky top-0 flex flex-col bg-background  ">
+    <div class=" flex  relative flex-row items-center gap-2 py-3 justify-start">
+      <span class="text-lg text-foreground">Nuevo Nodo</span>
+      <button (click)="close()"
+        class="absolute cursor-pointer right-0 inline-flex w-fit justify-center rounded-md bg-background px-3 py-2 text-sm font-semibold text-foreground shadow-sm ring-1 ring-inset ring-foreground hover:bg-card sm:mt-0 sm:w-fit">
+        X
+      </button>
+    </div>
+    <hr class="border-dashed border-border">
+  </div>
+  <div class="w-full  mx-auto ">
+    <div
+      class="flex w-full  overflow-auto scrollbar-thumb-rounded scrollbar-track-rounded grow  scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted">
+      <button
+        class="py-2 px-4 text-sm font-medium text-primary border-b-2 border-primary hover:border-primary hover:text-primary focus:outline-none active-tab"
+        onclick="selectTab('tab1')" id="tab1-btn">
+        Seleccion
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab2')" id="tab2-btn">
+        Informativo
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab2')" id="tab2-btn">
+        Lista Agregar
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab3')" id="tab3-btn">
+        Lista Mostrar
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab3')" id="tab3-btn">
+        Lista Eliminar
+      </button>
+
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab3')" id="tab3-btn">
+        Seleccion
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab3')" id="tab3-btn">
+        Pregunta
+      </button>
+      <button
+        class="py-2 px-4 text-sm font-medium text-muted-foreground border-b-2 border-transparent hover:border-primary hover:text-primary focus:outline-none"
+        onclick="selectTab('tab3')" id="tab3-btn">
+        Fin
+      </button>
+    </div>
+
+    <hr class="border-dashed border-border">
+
+
+    <div class="flex py-2 flex-col gap-2">
+      <span class="text-xs text-foreground">Seleccion</span>
+
+      <span class="text-xs text-muted-foreground">Nodo que muestra un listado de opciones en la cual deriva a siguientes
+        nodos</span>
+      <hr class="border-dashed border-border">
+
+      <span class="text-xs text-muted-foreground">Nombre de Nodo</span>
+      <input type="text">
+
+      <hr class="border-dashed border-border">
+      <span class="text-xs text-foreground">Lista de opciones</span>
+      <span class="text-xs text-muted-foreground">Vacia</span>
+      <hr class="border-dashed border-border">
+      <span class="text-xs text-foreground">Lista de conexiones</span>
+      <span class="text-xs text-muted-foreground">Vacia</span>
+    </div>
+
+    <hr class="border-dashed border-border">
+
+    <div class="flex py-2 flex-col gap-2 ">
+
+      <button class="w-full  bg-primary  text-white p-2 rounded-md ">
+        Generar Cambios
+      </button>
+      <button class="w-full  bg-red-600   text-white p-2 rounded-md  ">
+        Cancelar Cambios
+      </button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>

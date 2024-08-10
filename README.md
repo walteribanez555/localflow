@@ -1,6 +1,11 @@
 # localflow
 ## Portable Chatbot - ETH Buildaton Ethereum
 
+
+### Logo: 
+ ![Logo](assets/localflow_icon.jpeg)
+
+
 ### Participants:
 - **Diego Jhoan Guzmán Montoya**
 - **Cristian David Ramirez Callejas**
@@ -14,5 +19,5 @@
 - **Tailwind**
 - **Swiper**
 
-### Architecture
+### Architecture (LANDING PAGE)
 ![Architecture](assets/architecture.png)

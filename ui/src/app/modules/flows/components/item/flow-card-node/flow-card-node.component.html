@@ -1,0 +1,23 @@
+<div class="wrapper-node animate__animated animate__bounceIn">
+  <div class="node-template">
+    <!-- <div class="node-template-header">
+          {{dataIn?.data?.title}} ({{dataIn?.label}})
+      </div> -->
+    <div style="height: 70px;"
+      class=" w-full cursor-pointer bg-card flex flex-col  items-start justify-center p-2 rounded-md hover:bg-background ">
+      <div class="text text-xs text-foreground ">{{dataIn?.data?.text}}</div>
+      <hr class="border-dashed border-border w-full">
+      <div class="flex flex-row flex-wrap gap-1 py-1">
+        <div
+          class="focus-visible:ring-ring inline-flex h-6 items-center justify-start whitespace-nowrap rounded-md border border-primary bg-background px-3 text-xs font-medium text-primary shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50">
+          Inicio
+        </div>
+
+      </div>
+      <!-- <div *ngIf="dataIn?.action" class="node-button">
+            <button class="text-foreground" (click)="callChilds(dataIn?.action?.src, dataIn?.action?.key)">VER RUTA ({{dataIn?.label}})<i
+                    class="text-foreground"></i></button>
+        </div> -->
+    </div>
+  </div>
+</div>

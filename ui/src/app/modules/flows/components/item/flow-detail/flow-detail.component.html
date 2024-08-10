@@ -1,0 +1,56 @@
+<div class="flex  flex-col w-full">
+  <div class="flex py-2 flex-col w-full">
+    <span class="text-xl text-foreground text-bold">Detalles</span>
+    <div class="px-2 flex-col flex w-full gap-2">
+      <span class="text-xs text-muted-foreground">Nombre</span>
+      <input class="w-full" type="text">
+
+      <span class="text-xs text-muted-foreground">Descripcion</span>
+      <textarea class="w-full " (resize)="false"  ></textarea>
+
+      <span class="text-xs text-muted-foreground">Palabra de soporte</span>
+      <input class="w-full" type="text">
+
+
+
+    </div>
+  </div>
+  <hr class="border-dashed border-border">
+
+
+  <div class="flex py-2 flex-col w-full gap-4">
+    <span class="text-xl text-foreground text-bold">Aplicaciones</span>
+    <div class="flex  flex-wrap gap-2">
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-primary bg-background px-3 text-xs font-medium text-primary shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50">
+        <p class="capitalize">{{ 'Whatsapp'}}</p>
+      </div>
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-muted  bg-background px-3 text-xs font-medium text-muted shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 ">
+        <p class="capitalize">{{ 'Instagram'}}</p>
+      </div>
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-muted  bg-background px-3 text-xs font-medium text-muted shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 ">
+        <p class="capitalize">{{ 'Facebook'}}</p>
+      </div>
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-muted  bg-background px-3 text-xs font-medium text-muted shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 ">
+        <p class="capitalize">{{ 'Custom'}}</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-dashed border-border">
+
+  <div class="flex py-2 flex-col w-full gap-4">
+    <span class="text-xl text-foreground text-bold">Eventos</span>
+    <div class="flex  flex-wrap gap-2">
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-primary bg-background px-3 text-xs font-medium text-primary shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50">
+        <p class="capitalize">{{ 'Soporte'}}</p>
+      </div>
+      <div class="focus-visible:ring-ring inline-flex h-8 items-center justify-start whitespace-nowrap rounded-md border border-primary bg-background px-3 text-xs font-medium text-primary shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50">
+        <p class="capitalize">{{ 'Venta'}}</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-dashed border-border">
+
+
+</div>

@@ -1,15 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-item-header',
+  selector: 'app-flow-detail',
   standalone: true,
   imports: [
     CommonModule,
-    RouterLink
   ],
-  templateUrl : './item-header.component.html',
+  templateUrl : './flow-detail.component.html',
 
 })
-export class ItemHeaderComponent { }
+export class FlowDetailComponent { }
