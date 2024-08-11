@@ -27,88 +27,8 @@ export class OffersComponent {
   precio: number = 0;
   item: any;
 
-  contratoAddress = '0x0C2a7FD42A930c9E38F11a1DE4A313c5F86d0b03'; // Reemplaza con la dirección de tu contrato
+  contratoAddress = '0xdF16012b1229A46605FCA5707949960D766F86B9'; // Reemplaza con la dirección de tu contrato
   contratoABI = [
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_serviceId",
-          "type": "uint256"
-        }
-      ],
-      "name": "buyService",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_serviceId",
-          "type": "uint256"
-        }
-      ],
-      "name": "completeService",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_serviceId",
-          "type": "uint256"
-        }
-      ],
-      "name": "disputeService",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_serviceId",
-          "type": "uint256"
-        },
-        {
-          "internalType": "string",
-          "name": "_reviewText",
-          "type": "string"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_rating",
-          "type": "uint256"
-        }
-      ],
-      "name": "leaveReview",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_price",
-          "type": "uint256"
-        },
-        {
-          "internalType": "string",
-          "name": "_description",
-          "type": "string"
-        }
-      ],
-      "name": "listService",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
     {
       "inputs": [],
       "stateMutability": "nonpayable",
@@ -228,48 +148,83 @@ export class OffersComponent {
       "type": "event"
     },
     {
-      "inputs": [],
-      "name": "listAllServices",
-      "outputs": [
+      "inputs": [
         {
-          "components": [
-            {
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "internalType": "address payable",
-              "name": "provider",
-              "type": "address"
-            },
-            {
-              "internalType": "address payable",
-              "name": "consumer",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "price",
-              "type": "uint256"
-            },
-            {
-              "internalType": "string",
-              "name": "description",
-              "type": "string"
-            },
-            {
-              "internalType": "bool",
-              "name": "isCompleted",
-              "type": "bool"
-            }
-          ],
-          "internalType": "struct ServiceMarketplace.Service[]",
-          "name": "",
-          "type": "tuple[]"
+          "internalType": "uint256",
+          "name": "_serviceId",
+          "type": "uint256"
         }
       ],
-      "stateMutability": "view",
+      "name": "buyService",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_serviceId",
+          "type": "uint256"
+        }
+      ],
+      "name": "completeService",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_serviceId",
+          "type": "uint256"
+        }
+      ],
+      "name": "disputeService",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_serviceId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_reviewText",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_rating",
+          "type": "uint256"
+        }
+      ],
+      "name": "leaveReview",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_description",
+          "type": "string"
+        }
+      ],
+      "name": "listService",
+      "outputs": [],
+      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
