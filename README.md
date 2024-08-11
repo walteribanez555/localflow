@@ -21,3 +21,6 @@
 
 ### Visit the Landing Page:
 [Landing Page](https://d1qiu30ryqos4v.cloudfront.net/)
+
+### Avalanche-Bounty:
+[Avalanche](https://testnet.snowtrace.io/address/0xdF16012b1229A46605FCA5707949960D766F86B9/contract/43113/code)
