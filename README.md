@@ -19,3 +19,5 @@
 ### Architecture (LANDING PAGE)
 ![Architecture](assets/architecture.png)
 
+### Access the Project:
+[Project URL](https://d1qiu30ryqos4v.cloudfront.net/)
