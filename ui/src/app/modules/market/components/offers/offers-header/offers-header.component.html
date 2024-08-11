@@ -1,26 +1,22 @@
-<div class="flex flex-col gap-2">
-  <h1>Ethereum Service Interface</h1>
-
-  <div class="form-group">
-    <label for="nombre">Nombre del Ítem:</label>
-    <input type="text" id="nombre" [(ngModel)]="nombre" placeholder="Nombre del ítem">
+<div class="mb-4 flex justify-between">
+  <div class="inline-block">
+    <h3 class="font-semibold text-foreground">Listado de ofertas locales</h3>
+    <div class="space-x-1 text-xs font-medium text-muted-foreground">
+      <a href="" class="hover:text-primary">Market</a>
+      <span> - Lista</span>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="precio">Precio del Ítem (WEI)</label>
-    <input type="number" id="precio" [(ngModel)]="precio" placeholder="Precio del ítem">
+  <div class="inline-block space-x-4">
+    <button (click)="onSale()"
+      class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white">
+      Ofertar
+    </button>
+
+    <button (click)="onReloadToggle()"
+      class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white">
+      Cargar lista
+    </button>
   </div>
 
-
-  <div class="flex flex-row items-center justify-between w-full">
-    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="listarItem()">Listar Ítem</button>
-    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="comprarItem()">Comprar Ítem</button>
-    <button class="flex-none rounded-md bg-primary  px-4 py-2.5  text-xs font-medium text-gray-100 hover:text-white"  (click)="obtenerItem()">Obtener Ítem</button>
-
-  </div>
-
-  <div *ngIf="item">
-    <h2>Ítem Obtenido:</h2>
-    <pre>{{ item | json }}</pre>
-  </div>
 </div>

@@ -1,0 +1,28 @@
+<div class="flex  flex-col gap-5 w-full ">
+  <span>Interesado en comprar?</span>
+
+  <div class="flex flex-col items-start justify-start gap-2 w-full bg-background p-2 rounded-sm ">
+    <div class="flex flex-col gap-1 items-start w-full ">
+      <span class="text-muted-foreground text-sm" >Producto</span>
+      <span class="text-foreground text-xl"  >{{data.item[4]}}</span>
+    </div>
+
+
+    <div class="flex flex-col gap-1 items-start w-full ">
+      <span class="text-muted-foreground text-sm"  >Precio (mei)</span>
+      <span class="text-foreground text-xl" >{{data.item[3] | currency }}</span>
+
+    </div>
+
+    <div class="flex flex-col gap-1 items-start w-full ">
+      <span class="text-muted-foreground text-sm"  >Token</span>
+      <span class=" text-xs p-1 border rounded-md border-muted-foreground text-muted-foreground" >{{data.item[1] }}</span>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>

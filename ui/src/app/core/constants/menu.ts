@@ -30,14 +30,14 @@ export class Menu {
       items : [
         {
           icon : 'assets/icons/heroicons/outline/currency-dolar.svg',
-          label : 'Oferta',
+          label : 'Market',
           route : '/market/offers'
         },
-        {
-          icon : 'assets/icons/heroicons/outline/cash-register.svg',
-          label : 'Demanda',
-          route : '/market/demands'
-        },
+        // {
+        //   icon : 'assets/icons/heroicons/outline/cash-register.svg',
+        //   label : 'Demanda',
+        //   route : '/market/demands'
+        // },
 
       ]
     }

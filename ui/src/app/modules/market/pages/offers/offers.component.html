@@ -9,7 +9,8 @@
   ' flex-col px-4  sm:px-8 overflow-auto scrollbar-thumb-rounded scrollbar-track-rounded grow  scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted py-4'
   ">
 
-  <app-offers-header></app-offers-header>
+  <app-offers-header  (onToggleCreate)="onCreateSale()"   (onReload)="onReloadList()"  ></app-offers-header>
+  <app-table-market  (onSelectItem)="onSelectItem($event)"  [services]="services"  ></app-table-market>
 
 
 

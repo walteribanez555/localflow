@@ -12,4 +12,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl : './market.component.html',
 
 })
-export class MarketComponent { }
+export class MarketComponent {
+
+
+
+ }

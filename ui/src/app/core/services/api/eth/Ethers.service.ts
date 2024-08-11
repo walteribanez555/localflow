@@ -21,8 +21,8 @@ export class EthersService {
   private modalService = inject(ModalService);
 
   async inicializarContrato(contratoAddress: string, contratoABI: any) {
-    // if (typeof window.ethereum !== 'undefined') {
-      if (false) {
+    if (typeof window.ethereum !== 'undefined') {
+      // if (false) {
 
       this.provider = new ethers.BrowserProvider(window.ethereum);
       this.signer = await this.provider?.getSigner();
@@ -32,6 +32,10 @@ export class EthersService {
         contratoABI,
         this.signer
       );
+
+      console.log({ contrato: this.contrato });
+
+
     } else {
       let privateKey = '';
 
@@ -55,7 +59,7 @@ export class EthersService {
 
       this.modalService
         .open(ModalKeyIdComponent, {
-          title: `Deseas generar la orden?`,
+          title: `Ingresar tus api keys`,
           size: 'sm',
           forms: [keyForm],
           data: {},
@@ -63,7 +67,7 @@ export class EthersService {
           actions: [
             {
               action: ActionType.Create,
-              title: 'Generar Nueva Orden',
+              title: 'Ingresar',
             },
           ],
         })
@@ -77,10 +81,17 @@ export class EthersService {
             privateKey = dynamicFields[0].fieldFormControl.value;
 
 
+            // FUJI TESTNET
             // Create provider and signer
             this.provider = new ethers.JsonRpcProvider(
               'https://api.avax-test.network/ext/bc/C/rpc'
             );
+
+
+            // Scroll testnet
+            // this.provider = new ethers.JsonRpcProvider(
+            //   'https://sepolia-rpc.scroll.io/'
+            // );
 
             const block = await this.provider.getBlockNumber();
 
@@ -92,6 +103,7 @@ export class EthersService {
               contratoABI,
               this.signer
             );
+
 
             console.log({ contrato: this.contrato });
           },
@@ -128,15 +140,22 @@ export class EthersService {
     await transaccion.wait(); // Wait for the transaction to be mined
   }
 
-  async obtenerItems(): Promise<any[]> {
+  async obtenerItems() {
     if (!this.contrato) throw new Error('Contrato no inicializado');
-    const serviceIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; // Example service IDs, replace with actual IDs
+
+    const serviceCount = await this.contrato['serviceCount']();
+    const numberServices = ethers.toNumber(serviceCount);
+
+    // Obtén los servicios y transforma los resultados a objetos legibles
     const items = await Promise.all(
-      serviceIds.map((id) => this.contrato!['services'](id))
+      Array.from({ length: numberServices }, (_, i) => this.contrato!['services'](i + 1))
     );
-    console.log('Ítems obtenidos:', items);
-    return items.map(this.transformBigInts);
-  }
+
+    // Transformar los BigInt en un formato legible (si es necesario)
+    const readableItems = items.map(item => this.transformBigInts(item));
+
+    return readableItems;
+}
 
   replacer(key: string, value: any): any {
     if (typeof value === 'bigint') {
