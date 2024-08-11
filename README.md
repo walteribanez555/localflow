@@ -19,8 +19,3 @@
 ### Architecture (LANDING PAGE)
 ![Architecture](assets/architecture.png)
 
-### Architecture (Service bots)
-![services](assets/it_backend.png)
-
-### API Documentation
-For detailed information about the API, visit the [Postman Documentation](https://documenter.getpostman.com/view/11985015/2sA3s3HBXV).

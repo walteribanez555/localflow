@@ -6,7 +6,7 @@ exports.createBrowserWindow = () => {
   return new BrowserWindow({
     width: 1024,
     height: 768,
-    icon: path.join(__dirname, "assets/icons/png/64x64.png"),
+    icon: path.join(__dirname, "assets/icons/png/localflow.jpeg"),
     //titleBarStyle: 'hidden',
     //frame: false,
     backgroundColor: "#fff",
